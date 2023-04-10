@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <Frame CornerRadius="16">
             <Grid ColumnDefinitions="0.015, *, 0.015"
-                  RowDefinitions="0.015, auto, *, *, 0.015"
+                  RowDefinitions="0.015, auto, *, *, *, 0.015"
                   RowSpacing="4">
 
                 <!--Header: Title-->
@@ -21,11 +21,13 @@
                        VerticalOptions="Center" />
 
                 <!--Body: Content-->
+                <Grid ></Grid>
+                
                 <Grid Grid.Column="1"
                       Grid.Row="2"
                       ColumnDefinitions="0.015, *, 0.015"
                       RowDefinitions="*, *, *"
-                      VerticalOptions="FillAndExpand">
+                      VerticalOptions="Fill">
                     <!--<StackLayout Grid.Column="1"
                                  Orientation="Horizontal"
                                  HorizontalOptions="FillAndExpand">
@@ -79,11 +81,11 @@
                     <Button Grid.Column="0"
                             CornerRadius="24"
                             Text="Open"
-                            VerticalOptions="CenterAndExpand" />
+                            VerticalOptions="Center" />
                     <Button Grid.Column="1"
                             CornerRadius="24"
                             Text="Close"
-                            VerticalOptions="CenterAndExpand" />
+                            VerticalOptions="Center" />
                 </Grid>
 
             </Grid>
