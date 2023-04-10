@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppointmentScheduling.Views.AppointmentPage">
+    <ContentPage.Content>
+        <Frame CornerRadius="16">
+            <Grid ColumnDefinitions="0.015, *, 0.015"
+                  RowDefinitions="0.015, auto, *, *, 0.015"
+                  RowSpacing="4">
+
+                <!--Header: Title-->
+                <BoxView Grid.Column="1"
+                         Grid.Row="1"
+                         BackgroundColor="Blue" />
+
+                <Label Grid.Column="1"
+                       Grid.Row="1"
+                       HorizontalOptions="Center"
+                       TextColor="White"
+                       Text="Appointment"
+                       VerticalOptions="Center" />
+
+                <!--Body: Content-->
+                <Grid Grid.Column="1"
+                      Grid.Row="2"
+                      ColumnDefinitions="0.015, *, 0.015"
+                      RowDefinitions="*, *, *"
+                      VerticalOptions="FillAndExpand">
+                    <!--<StackLayout Grid.Column="1"
+                                 Orientation="Horizontal"
+                                 HorizontalOptions="FillAndExpand">
+                        <Label HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               Text="ETA Start" />
+                        <Label Text="Thursday, May 10, 2023"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="1"
+                                 Grid.Row="1"
+                                 Orientation="Horizontal">
+                        <Label Text="ETA End"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+                        <Label Text="Thursday, May 10, 2023"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="Center" />
+                    </StackLayout>-->
+                    <Grid Grid.Column="1"
+                          Grid.Row="0"
+                          ColumnDefinitions="auto, *">
+                        <Label Text="ETA Provided" />
+                        <Label Grid.Column="1"
+                               Text="Thursday, May 10, 2023"
+                               HorizontalOptions="End" />
+                    </Grid>
+                    <Grid Grid.Column="1"
+                          Grid.Row="1"
+                          ColumnDefinitions="auto, *">
+                        <Label Text="ETA Provided" />
+                        <Label Grid.Column="1"
+                               Text="Thursday, May 10, 2023"
+                               HorizontalOptions="End" />
+                    </Grid>
+                    <Grid Grid.Column="1"
+                          Grid.Row="2"
+                          ColumnDefinitions="auto, *">
+                        <Label Text="ETA Provided" />
+                        <Label Grid.Column="1"
+                               Text="Thursday, May 10, 2023" 
+                               HorizontalOptions="End"/>
+                    </Grid>
+                </Grid>
+
+                <!--Footer: btns-->
+                <Grid Grid.Column="1"
+                      Grid.Row="3"
+                      ColumnDefinitions="auto,*">
+                    <Button Grid.Column="0"
+                            CornerRadius="24"
+                            Text="Open"
+                            VerticalOptions="CenterAndExpand" />
+                    <Button Grid.Column="1"
+                            CornerRadius="24"
+                            Text="Close"
+                            VerticalOptions="CenterAndExpand" />
+                </Grid>
+
+            </Grid>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
